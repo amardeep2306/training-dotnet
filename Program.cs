@@ -1,10 +1,5 @@
 ﻿using System;
-using static Task1;
-using static Task2;
-using static Task3_Interfaces;
-using static Task4_AbstractClass;
-using static Task5_Array;
-using static Task6_CheckIsNumber;
+
 public class TrainingTasks
 {
     public static void Main(string[] args)
@@ -25,6 +20,15 @@ public class TrainingTasks
         //Task5_Array task5 = new Task5_Array();
 
         // Task 6
-        Task6_CheckIsNumber task6 = new Task6_CheckIsNumber();
+        //Task6_CheckIsNumber task6 = new Task6_CheckIsNumber();
+
+        // Task 7
+        //Task7_ConvertFileToUppercase task7 = new Task7_ConvertFileToUppercase(args);
+
+        // Task 8
+        //Task8_ArrayListObjects task8 = new Task8_ArrayListObjects(args);
+
+        // Task 9
+        Task9_ProductOfNumber task9 = new Task9_ProductOfNumber(args);
     }
 }
