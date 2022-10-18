@@ -1,6 +1,6 @@
-public class Task2
+public class InheritanceClasses
 {
-    public Task2(string[] args)
+    public InheritanceClasses(string[] args)
     {
 
         Console.WriteLine("Please enter persons name");
@@ -10,7 +10,7 @@ public class Task2
  
         for (int i = 0; i < total; i++)
         {
-            Console.Write("Person[" + (i + 1) + "]: ");
+            Console.Write($"Person[{i + 1}]: ");
             if (i == 0)
             {
                 persons[i] = new Teacher(Console.ReadLine());
@@ -38,7 +38,7 @@ public class Task2
 
     public class Person
     {
-        public string Name;
+        public string Name { get; set; }
  
         public Person(string name)
         {
@@ -47,7 +47,7 @@ public class Task2
  
         public override string ToString()
         {
-            return "Hello! My name is " + Name;
+            return $"Hello! My name is {Name}";
         }
         ~Person()
         {

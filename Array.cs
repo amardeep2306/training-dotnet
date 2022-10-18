@@ -1,10 +1,6 @@
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-class Task5_Array
+class Array
 {
-    public Task5_Array()
+    public Array()
     {
         int i       = 0;
         //declare array of integers
@@ -14,7 +10,7 @@ class Task5_Array
         Console.WriteLine("Enter array elements : ");
         for (i = 0; i < arr.Length; i++)
         {
-            Console.Write("Element[" + (i + 1) + "]: ");
+            Console.Write($"Element[{i + 1}]: ");
             arr[i] = int.Parse(Console.ReadLine());
         }
 

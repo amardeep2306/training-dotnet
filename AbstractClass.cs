@@ -1,6 +1,6 @@
-public class Task4_AbstractClass
+public class AbstractClass
 {
-    public Task4_AbstractClass(string[] args)
+    public AbstractClass(string[] args)
     {
         Dog dog = new Dog();
         Console.WriteLine("\nPlease enter a dog name");

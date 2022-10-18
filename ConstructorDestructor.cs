@@ -1,16 +1,16 @@
 
  
-public class Task1
+public class ConstructorDestructor
 {
-    public Task1(string[] args)
+    public ConstructorDestructor(string[] args)
     {
         int total = 3;
         Person[] persons = new Person[total];
 
-        Console.WriteLine($"Please enter persons name");
+        Console.WriteLine("Please enter persons name");
         for (int i = 0; i < total; i++)
         {
-            Console.Write("Person[" + (i + 1) + "]: ");
+            Console.Write($"Person[{i + 1}]: ");
             persons[i] = new Person(Console.ReadLine());
         }
  
@@ -22,7 +22,7 @@ public class Task1
 
      public class Person
     {
-        public string Name;
+        public string Name { get; set; }
  
         public Person(string name)
         {
@@ -31,7 +31,7 @@ public class Task1
  
         public override string ToString()
         {
-            return "Hello! My name is " + Name;
+            return $"Hello! My name is {Name}";
         }
  
         ~Person()

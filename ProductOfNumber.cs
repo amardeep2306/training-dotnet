@@ -1,7 +1,7 @@
 using System;
-public class Task9_ProductOfNumber
+public class ProductOfNumber
 {
-    public Task9_ProductOfNumber(string[] args)
+    public ProductOfNumber(string[] args)
     {
         Console.Write("Please enter first integer value: ");
         int x = Convert.ToInt32(Console.ReadLine());

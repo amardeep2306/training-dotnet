@@ -1,6 +1,6 @@
-public class Task3_Interfaces
+public class Interfaces
 {
-    public Task3_Interfaces()
+    public Interfaces()
     {
         Console.WriteLine("\nPlease enter an amount of gasoline to refuel");
         Car car = new Car(0);
@@ -20,7 +20,7 @@ public class Task3_Interfaces
     }
 
     public class Car : IVehiculo {
-        public int Gasoline;
+        public int Gasoline { get; set; }
  
         public Car(int gasoline)
         {

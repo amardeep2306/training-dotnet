@@ -1,9 +1,9 @@
 using System;
 using System.Collections;
  
-public class Task8_ArrayListObjects
+public class ArrayListObjects
 {
-    public Task8_ArrayListObjects(string[] args)
+    public ArrayListObjects(string[] args)
     {
         ArrayList list = new ArrayList();
  
@@ -30,8 +30,8 @@ public class Task8_ArrayListObjects
  
     public class Person
     {
-        public string Name;
-        public int Age;
+        public string Name { get; set; }
+        public int Age { get; set; }
  
  
         public override string ToString()
